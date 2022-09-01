@@ -17,6 +17,7 @@
 --Light-Grayish-Violet-app-background: hsl(270, 20%, 96%);
 --Very-Dark-Desaturated-Violet-submit-button-background: hsl(271, 36%, 24%);
 --Very-Light-Magenta-radio-button-outline: hsl(289, 100%, 72%);
+--backgorund-text: #ede5f4;
 --Rubik-family: 'Rubik', sans-serif;
 }
 
@@ -34,7 +35,7 @@ body {
 .background_1 {
  width: 33%;
  height: 81%;
- background-color: var(--Light-Violet);
+ background: linear-gradient(50deg, var(--Light-Violet), var(--Light-Magenta));
  position: fixed;
  border-radius: 0 0 436px 400px;
   margin-left: -997px;
@@ -46,7 +47,7 @@ main {
  display: flex;
  align-items: center;
  justify-content: center;
- margin-right: -15%;
+ margin-right: -16%;
  margin-top: 11%;
  margin-bottom: auto;
  z-index: 10;
@@ -62,8 +63,8 @@ main {
 }
 
 .background_2 {
- width: 15%;
- height: 3%;
+ width: 13%;
+ height: 4%;
  background-color: var(--White);
  position: absolute;
  left: 32%;
@@ -79,25 +80,34 @@ main {
  justify-content: center;
  gap: 15px;
  border-radius: 30px 30px 10px 10px;
- background: var(--Light-Violet);
+ background: linear-gradient(50deg, var(--Light-Violet), var(--Light-Magenta));
+ color: var(--White);
 }
 
 .perfil_img {
- width: 11%;
- height: 35%;
+ width: 19%;
+ height: 37%;
  margin-top: 6%;
  border-radius: 100%;
+ display: flex;
+ align-items: center;
+ gap: 14px;
 }
 
 .img_perfil {
  width: 100%;
  height: 100%;
  border-radius: 100%;
- border: solid var(--White);
+ border: solid 2px var(--White);
 }
 
 .p_perfil {
  margin-top: 6%;
+}
+
+.ellipsis {
+  margin-top: 6%;
+  margin-left: 21%;
 }
 
 .conversation {
@@ -111,20 +121,20 @@ main {
 
 .text_1 {
  width: 58%;
- height: 9%;
+ height: 8%;
  border-radius: 20px 20px 20px 7px;
  padding: 10px;
- background-color: var(--Pale-Violet-sub-heading-at-the-top-of-the-app-UI);
+ background-color: var(--backgorund-text);
  color: var(--Moderate-Violet-chat-on-the-left);
 }
 
 .text_2 {
  width: 58%;
- height: 9%;
+ height: 8%;
  margin: 10px 0;
  border-radius: 20px 20px 20px 7px;
  padding: 10px;
- background-color: var(--Pale-Violet-sub-heading-at-the-top-of-the-app-UI);
+ background-color: var(--backgorund-text);
  color: var(--Moderate-Violet-chat-on-the-left);
 }
 
@@ -159,6 +169,7 @@ main {
  box-shadow: 0 0 5px gray;
  padding: 10px;
  border-radius: 15px 15px 7px 15px;
+ background-color: var(--White);
 }
 
 .text_4 {
@@ -167,20 +178,114 @@ main {
  box-shadow: 0 0 5px grey;
  padding: 10px;
  border-radius: 15px 15px 5px 15px;
+ background-color: var(--White);
 }
 
 .text_5 {
  width: 58%;
- height: 12%;
+ height: 11%;
  padding: 10px;
  margin-top: 15px;
  border-radius: 20px 20px 20px 7px;
- background-color: var(--Pale-Violet-sub-heading-at-the-top-of-the-app-UI);
+ background-color: var(--backgorund-text);
  color: var(--Moderate-Violet-chat-on-the-left);
 }
 
+.audio {
+  width: 70%;
+  height: 8%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px 15px 15px 5px;
+  margin: 4% 0;
+  color: var(--White);
+  background: linear-gradient(-50deg, var(--Light-Violet), var(--Light-Magenta));
+}
+
+.audio p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.audio_p {
+  font-size: 18px;
+  font-weight: 500px;
+}
+
+.text_box {
+  width: 100%;
+  height: 8%;
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  background-color: var(--White);
+  color: var(--Grayish-Blue-placeholder-text);
+  font-size: 17px;
+}
+
+.text_box p {
+  margin-left: 10%;
+}
+
+#circle_chevron {
+  color: var(--Very-Dark-Desaturated-Violet-submit-button-background);
+  font-size: 33px;
+  margin-left: 25%;
+}
 
 .description {
  width: 60%;
  height: 100%;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1368px/*  max-height: 769px */) {
+  body {
+    width: 100vw;
+    height: 640px;
+    font-size: 15px;
+  }
+
+  .background_1 {
+    width: 33%;
+    height: 90%;
+  }
+
+  main {
+    width: 61%;
+    height: 80%;
+    margin-right: -9%;
+    margin-top: 4%;
+  }
+
+  #chat {
+    width: 36%;
+  }
+
+  .background_2 {
+    left: 30%;
+    top: 11%;
+  }
+
+  .conversation {
+    font-size: 9px;
+  }
+
+  .text_4 {
+    width: 38%;
+    padding: 7px;
+  }
+
+  .text_5 {
+    width: 59%;
+  }
 }

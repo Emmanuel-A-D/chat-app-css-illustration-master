@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> <!-- font-family: 'Rubik', sans-serif; -->
+  <script src="https://kit.fontawesome.com/3b92c29675.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   
@@ -17,11 +18,14 @@
       <div class="background_2"></div>
       <div class="avatar">
         <div class="perfil_img">
-          <img class="img_perfil" src="images/avatar.jpg" alt="image_perfil">
+          <i class="fa-solid fa-chevron-left"></i> <img class="img_perfil" src="images/avatar.jpg" alt="image_perfil">
         </div>
         <div class="p_perfil">
-        <p> Samuel Green</p>
-        <p> Available to Walk</p>
+         <p> Samuel Green</p>
+         <p> Available to Walk</p>
+        </div>
+        <div class="ellipsis">
+         <i class="fa-solid fa-ellipsis-vertical"></i>
         </div>
       </div>
       <div class="conversation">
@@ -45,14 +49,14 @@
         <div class="text_5">
           <p> She looks so happy! The time we discussed works. How long shall I take her out for?</p>
         </div>
-        <div>
-          <p> 30 minute walk</p> <p>$29</p>
+        <div class="audio">
+         <p> <i class="fa-regular fa-circle"></i> 30 minute walk</p> <p class="audio_p">$29</p>
         </div>
-        <div>
-          <p> 1 hour walk</p> <p>$49</p>
+        <div class="audio">
+         <p> <i class="fa-regular fa-circle"></i> 1 hour walk</p> <p class="audio_p">$49</p>
         </div>
-        <div>
-          <p> Type a message… </p>
+        <div class="text_box">
+          <p>Type a message…</p> <i id="circle_chevron" class="fa-solid fa-circle-chevron-right"></i>
         </div>
       </div>
     </section>
@@ -67,8 +71,9 @@
   </main>
   
   <div class="footer">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. </p>
+    <p> Coded by <a href="#">Your Name Here</a>.</p>
   </div>
+<!--   <img src="design/desktop-design.jpg" alt=""> -->
 </body>
 </html>
